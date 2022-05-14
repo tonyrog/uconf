@@ -1,0 +1,9 @@
+{application, uconf,
+ [{description, "micro config"},
+  {vsn, git},
+  {modules, ["@@MODULES@@"]},
+  {mod, {uconf_app, []}},
+  {registered, [uconf_denon]},
+  {env, []},
+  {applications,[kernel,stdlib]}
+  ]}.
